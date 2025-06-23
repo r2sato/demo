@@ -1,15 +1,8 @@
-import requests
-from bs4 import BeautifulSoup
+def main():
+    """
+    A simple function that prints 'Hello World' to the screen.
+    """
+    print("Hello World")
 
-# Get
-res = requests.get('https://www.google.com/')
-
-# Parse
-soup = BeautifulSoup(res.text, 'html.parser')
-
-# title
-title = soup.find('title').text
-
-print(title)
-
-
+if __name__ == "__main__":
+    main()
